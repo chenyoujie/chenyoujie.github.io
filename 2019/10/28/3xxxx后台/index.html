@@ -140,17 +140,6 @@ django使用nginx+uwsig代理django，具体请参考
 <p><code>supervisorctl start 3208_serial</code></p>
 </blockquote>
 <h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><p>开机自启脚本为<code>server3208.service</code>，一键部署脚本中自动开启开机自启</p>
-<h2 id="2018-11-02晚"><a href="#2018-11-02晚" class="headerlink" title="2018-11-02晚"></a>2018-11-02晚</h2><p>与任好沟通后确定两点</p>
-<blockquote>
-<ol>
-<li>有三台主机均会发出主备电事件。</li>
-<li>复位事件需要被记录下来，并且当出现复位操作的时候，前面所有事件全部结束，等待主机将上次事件发送并作为一个新的事件进行记录。</li>
-</ol>
-</blockquote>
-<h2 id="2018-11-09晚"><a href="#2018-11-09晚" class="headerlink" title="2018-11-09晚"></a>2018-11-09晚</h2><p>与任好沟通后确认</p>
-<blockquote>
-<p>屏蔽需等待报警结束之后，屏蔽才能生效，若设备故障，则无需等待结束，屏蔽即刻生效<br>复位不能结束屏蔽事件</p>
-</blockquote>
 
 	 
 	     <p style="margin:20px 0; color:#9f9f9f; font-size:12px;">
